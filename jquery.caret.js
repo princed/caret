@@ -1,4 +1,10 @@
 (function($) {
+	function focus(target) {
+		if (!document.activeElement || document.activeElement !== target) {
+			target.focus();
+		}
+	}
+
   $.fn.caret = function(pos) {
     var target = this[0];
 	var isContentEditable = target.contentEditable === 'true';
@@ -8,7 +14,7 @@
       if (window.getSelection) {
         //contenteditable
         if (isContentEditable) {
-          target.focus();
+          focus(target);
           var selection = window.getSelection();
           // Opera 12 check
           if (!selection.rangeCount) {
@@ -25,7 +31,7 @@
       }
       //IE<9
       if (document.selection) {
-        target.focus();
+        focus(target);
         //contenteditable
         if (isContentEditable) {
             var range1 = document.selection.createRange(),
@@ -53,7 +59,7 @@
     if (window.getSelection) {
       //contenteditable
       if (isContentEditable) {
-        target.focus();
+        focus(target);
         window.getSelection().collapse(target.firstChild, pos);
       }
       //textarea
@@ -69,7 +75,7 @@
       range.select();
     }
     if (!isContentEditable)
-      target.focus();
+      focus(target);
     return pos;
   }
 })(jQuery)
