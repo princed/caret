@@ -1,6 +1,6 @@
 {
   "name": "jquery-caret",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "jQuery plugin to manipulate the caret's position in a text box",
   "main": "jquery.caret.js",
   "repository": {
@@ -11,10 +11,14 @@
     "caret",
     "jquery"
   ],
-  "author": "Gideon Sireling <code@accursoft.com>",
-  "license": "BSD-3",
+  "author": {
+		"name": "Gideon Sireling",
+		"email": "<code@accursoft.com>",
+		"url": "http://www.accursoft.com/gideon-sireling.html"
+	},
+  "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/princed/caret/issues"
+    "url": "http://code.accursoft.com/caret/issues"
   },
-  "homepage": "https://github.com/princed/caret"
+  "homepage": "http://code.accursoft.com/caret"
 }
