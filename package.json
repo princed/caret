@@ -14,11 +14,8 @@
   "author": {
 		"name": "Gideon Sireling",
 		"email": "<code@accursoft.com>",
-		"url": "http://www.accursoft.com/gideon-sireling.html"
+		"url": "https://www.linkedin.com/in/gideonsireling"
 	},
   "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "http://code.accursoft.com/caret/issues"
-  },
-  "homepage": "http://code.accursoft.com/caret"
+  "homepage": "https://bitbucket.org/accursoft/caret/"
 }
